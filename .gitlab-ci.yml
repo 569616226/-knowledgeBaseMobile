@@ -1,0 +1,10 @@
+stages:
+- develop
+deploy:
+  stage: develop
+  script:
+    - deploy_qa_mobile mobile_qatest_elinkport_com knowledgeBaseMobile
+  only:
+    - develop
+  tags:
+    - develop
